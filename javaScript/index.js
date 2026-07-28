@@ -45,7 +45,7 @@ let currentAnimals = []; //working data
 // loadAnimals function
 const loadAnimals = async () => {
   try {
-    const res = await fetch("data/animals.json");
+    const res = await fetch("animals.json");
     const data = await res.json();
     animals = data;
     currentAnimals = [...data];
