@@ -16,4 +16,4 @@ Wildlife Hub is a simple web application built with HTML,Tailwind CSS,DaisyUI, a
 - JavaScript(ES6)
 
 ### Live Demo
-
+https://aananya99.github.io/wildlife-hub/
