@@ -45,13 +45,14 @@ let currentAnimals = []; //working data
 // loadAnimals function
 const loadAnimals = async () => {
   try {
-    const res = await fetch("../data/animals.json");
+    const res = await fetch("data/animals.json");
     const data = await res.json();
     animals = data;
     currentAnimals = [...data];
     // console.log(animals); //master copy
     // console.log(currentAnimals); //working copy
     displayAnimalsCard(currentAnimals);
+    selectBtnClass(allBtn);
   } catch (error) {
     console.error(error);
     errMsg.classList.remove("hidden");
